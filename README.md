@@ -35,7 +35,7 @@ All countries are processed the same way, with four exceptions:
 
 The scraper saves three different datasets. You can check out sample datasets in the [data folder](/data).
 
-###`jhu-csse-newly-reported-cases_2020-12-14.csv`
+### Dataset: `jhu-csse-newly-reported-cases_2020-12-14.csv`
 
 Contains the daily new figures for cases and deaths on the date given in the filename. It does not include the data of previous dates.
 
@@ -48,9 +48,9 @@ Contains the daily new figures for cases and deaths on the date given in the fil
 | dateRep| date | date in `yyyy-mm-dd` format; will be the same for all entries |
 | countryterritoryCode | string | country identifier ISO alpha 3 code |
 
-298,9,Afghanistan,2020-12-14,AFG
 
-### `ecdc_base-plus_update.csv`
+
+### Dataset: `ecdc_base-plus_update.csv`
 
 Contains the daily reported figures for cases and deaths -- back to the beginning of reporting (beginning of 2020 for most countries).
 
@@ -63,7 +63,7 @@ Contains the daily reported figures for cases and deaths -- back to the beginnin
 | countryterritoryCode | string | country identifier ISO alpha 3 code |
 
 
-### `PROCESSED_daily_cases_ecdc_jhu_2020-12-14.csv`
+### Dataset: `PROCESSED_daily_cases_ecdc_jhu_2020-12-14.csv`
 
 Contains the same as the previous dataset, just with two additional columns - population data (of 2019, sourced from the [World Bank](https://data.worldbank.org/indicator/SP.POP.TOTL)) and the continent (sourced from the [UN](https://unstats.un.org/unsd/methodology/m49/)) added to it.
 
