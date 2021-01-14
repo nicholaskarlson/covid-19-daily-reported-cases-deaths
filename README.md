@@ -1,6 +1,6 @@
 # Sourcing daily COVID-19 cases and deaths
 
-In December 2020, the ECDC decided to stop publishing daily new cases and deaths per country. Since many of our trends depend on this kind of data, we needed replacement. The [Johns Hopkins University's Center for Systems Science and Engineering (CSSE)](https://github.com/CSSEGISandData/COVID-19) publishes data every day, however they use the cumulative number of cases and deaths by country.
+In December 2020, the [ECDC](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide) decided to stop publishing daily new cases and deaths per country. Since many of our trends depend on this kind of data, we needed replacement. The [Johns Hopkins University's Center for Systems Science and Engineering (CSSE)](https://github.com/CSSEGISandData/COVID-19) publishes data every day, however they use the cumulative number of cases and deaths by country.
 
 We wrote a script that converts the cumulative case numbers back to daily case numbers. 
 
@@ -41,7 +41,7 @@ Contains the daily new figures for cases and deaths on the date given in the fil
 
 
 |  column name |  data type |  description |
-|--------------|------------|--------------------------------|
+|--------------|-----------------|--------------------------------|
 | cases |  integer | number of newly reported cases on the given date |
 | deaths |  integer | number of newly reported deaths on the given date |
 | countriesAndTerritories | string | full length country name |
@@ -55,7 +55,7 @@ Contains the daily new figures for cases and deaths on the date given in the fil
 Contains the daily reported figures for cases and deaths -- back to the beginning of reporting (beginning of 2020 for most countries).
 
 |  column name |  data type |  description |
-|--------------|------------|--------------------------------|
+|--------------|-----------------|--------------------------------|
 | cases |  integer | number of newly reported cases on the given date |
 | deaths |  integer | number of newly reported deaths on the given date |
 | countriesAndTerritories | string | full length country name |
@@ -68,7 +68,7 @@ Contains the daily reported figures for cases and deaths -- back to the beginnin
 Contains the same as the previous dataset, just with two additional columns - population data (of 2019, sourced from the [World Bank](https://data.worldbank.org/indicator/SP.POP.TOTL)) and the continent (sourced from the [UN](https://unstats.un.org/unsd/methodology/m49/)) added to it.
 
 |  column name |  data type |  description |
-|--------------|------------|--------------------------------|
+|--------------|-----------------|--------------------------------|
 | cases |  integer | number of newly reported cases on the given date |
 | deaths |  integer | number of newly reported deaths on the given date |
 | countriesAndTerritories | string | full length country name |
