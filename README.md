@@ -1,21 +1,21 @@
 # Sourcing daily COVID-19 cases and deaths
 
-In December 2020, the [ECDC](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide) decided to stop publishing daily new cases and deaths per country. Since many of our trends depend on this kind of data, we needed replacement. The [Johns Hopkins University's Center for Systems Science and Engineering (CSSE)](https://github.com/CSSEGISandData/COVID-19) publishes data every day, however they use the cumulative number of cases and deaths by country.
+In December 2020, the [ECDC](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide) decided to stop publishing daily new cases and deaths per country. Since many elements of our journalistic COVID-19 coverage depend on this kind of data, we needed replacement. The [Johns Hopkins University's Center for Systems Science and Engineering (CSSE)](https://github.com/CSSEGISandData/COVID-19) publishes data every day, however they use the cumulative number of cases and deaths by country.
 
-We wrote a script that converts the cumulative case numbers back to daily case numbers. 
+We wrote a script that converts the cumulative case numbers back to daily case numbers (for more information see Data Processing). 
 
-This dataset of daily case numbers is then appended to last continuous one published by the ECDC containing daily reported cases and deaths by country reaching back to the beginning of 2020.
+This dataset of daily case numbers is then appended by us to last continuous one published by the ECDC containing daily reported cases and deaths by country reaching back to the beginning of 2020.
 
 ## Contact
 
-If you are interested in this dataset, please contact us at data-team[at]dw.com so we can find a way to provide you with this. 
+If you are interested in this dataset, please contact us at data-team[at]dw.com
 
 
 ## Disclaimer
 
-We do this to the best of our knowledge and abilities, which sure doens't mean it's perfect and there cannot be any mistakes. If you notice a (potential) mistake, please reach out to us.
+We do this to the best of our knowledge and abilities. If you notice a (potential) mistake, please reach out to us (see email address under Contact)
 
-DW does not make any (and hereby disclaims all) liability, responsibility and warranties regarding the accuracy, completeness, fitness for a particular purpose, quality, merchantability and/or non-infringement of any information provided in these datasets. 
+While Deutsche Welle took all reasonable steps to verify the accuracy of the information presented in this dateset of daily case and death numbers, Deutsche Welle does not make any (and hereby disclaims all) liability, responsibility and warranties regarding the accuracy, completeness, fitness for a particular purpose, quality, merchantability and/or non-infringement of any information provided in these datasets. This includes, that Deutsche Welle disclaims any and all liability or responsibility whatsoever for any loss, damage or other prejudice of any kind that may arise from or in connection with the procurement, distribution or use of dataset of daily case number. 
 
 
 ## Data processing
@@ -83,7 +83,7 @@ Contains the same as the previous dataset, just with two additional columns - po
 
 ### If I want to use this data, how do I get it?
 
-Please contact us at data-team[at]dw[dot]com so we can find a way to provide you with this. 
+Please contact us at data-team[at]dw[dot]com
 
 ### If I use your data, what is the source I should give?
 
@@ -91,8 +91,7 @@ The source credit for the data should be `ECDC, JHU-CSSE` as the dataset consist
 
 ### I noticed a mismatch between your dataset and national data
 
-Yes, we did too. For the first two weeks of December, we compared the daily data by ECDC with the reverse-engineered daily data by JHU-CSSE. During that time, we too noticed a mismatch, with the JHU data being higher than the daily cases the ECDC listed. We could not find a fix for this problem, so the only thing we can do is make you aware of it.
-
+Yes, we did too. For the first two weeks of December, we compared the daily data by ECDC with the reverse-engineered daily data by JHU-CSSE. During that time, we too noticed a mismatch, with the JHU data being higher than the daily cases the ECDC listed. We so far have not identified a way to prevent that, so at least we wanted to make you aware of it (also see Data processing notes). In case you have ideas how to address it, please don't hesitate to reach out.
 In our reporting, we decided to check additional national sources if the accuracy of a certain number is essential to our story.
  
 
